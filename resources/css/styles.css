@@ -100,7 +100,7 @@ header {
     height: 20rem;
     margin-top: 85px;
     padding: 0 3rem;
-    background-image: url("./resources/images/mint_header.jpg");
+    background-image: url("/resources/images/mint_header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
