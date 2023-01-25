@@ -1,0 +1,231 @@
+/* Universal Styles */
+
+html {
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+}
+
+body {
+    min-width: 350px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Flavors";
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-family: "Flavors";
+    font-size: 3rem;
+}
+
+a {
+    transition: all 0.15s ease-in;
+}
+
+strong {
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Nav Styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid mediumseagreen;
+    background-color: rgb(210, 245, 210);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav li {
+    display: inline;
+    margin-right: 1.75rem;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: mediumseagreen;
+}
+
+.nav-logo {
+    font-family: "Knewave";
+    font-size: 2.75rem;
+    margin-left: 1.75rem;
+    color: mediumseagreen;
+}
+
+#trademark {
+    font-family: "Kanit";
+    font-size: 50%;
+    vertical-align: super;
+}
+
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .nav-logo {
+        margin: 0;
+    }
+}
+
+/* Header Styles */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    margin-top: 85px;
+    padding: 0 3rem;
+    background-image: url("/resources/images/mint_header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    line-height: 1;
+}
+
+@media (max-width: 700px) {
+    header {
+        height: 12rem;
+    }
+}
+
+/* Main Styles */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* About Us Styles */
+
+.about-us-container {
+    text-align: center;
+    line-height: 2;
+    margin: 3rem 3rem;
+    max-width: 1200px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        line-height: normal;
+        margin: 0 3rem;
+    }
+}
+
+/* Product Styles */
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 80%;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.product-box {
+    width: 250px;
+    height: 300px;
+    padding: 1rem;
+    border: 2px solid mediumseagreen;
+    background-color: rgb(210, 245, 210);
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+.product-box img {
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid mediumseagreen;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Styles */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-box {
+    width: 300px;
+    height: 300px;
+    border: 2px solid mediumseagreen;
+}
+
+#contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background-color: mediumseagreen;
+    color: white;
+    text-align: center;
+}
+
+#contact-left a {
+    color: white;
+    text-decoration: none;
+}
+
+#contact-left a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+
+footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: mediumseagreen;
+    color: white;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 700px) {
+    footer {
+        height: 45px;
+    }
+}
